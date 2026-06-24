@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  background: url("images/art-deco-texture.jpg") repeat;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.page-wrapper {
+  width: 1105px;
+  margin: auto;
+  padding: 1em 2em;
+  background-color: #232428;
+  color: #eacb89;
+  overflow: auto;
+}
+
+header {
+  height: 120px;
+  background: url("images/css-zen-garden.png") no-repeat center;
+}
+
+.summary {
+  font-size: 11px;
+}
+
+h1,
+h2 {
+  display: none;
+}
+
+a:link {
+  color: #e30b5d;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #e30b5d;
+}
+
+a:hover,
+a:active {
+  color: #b4aa99;
+}
+
+a:focus {
+  text-decoration: underline;
+}
+
+.preamble {
+  width: 330px;
+  float: left;
+  padding: 35px 10px;
+  margin: 100px 0 0 0;
+  background: url("images/column-header-1.png") no-repeat top;
+}
+
+.main {
+  width: 730px;
+  float: right;
+  padding: 65px 10px;
+  background: url("images/column-header-2.png") no-repeat center top;
+}
+
+footer {
+  clear: both;
+  padding-top: 2em;
+}
