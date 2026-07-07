@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@import url("reset.css");
+
+/* Base Font Size */
+/* 14 ÷ 16 = 0.875 --> 87.5% */
+body {
+  font-size: 87.5%;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  color: #2b1d0e;
+  background: #2b1d0e url("images/leather.jpg") repeat;
+}
+
+/* Container Width and Padding */
+/* 1105 ÷ 1280 = 0.86328125 --> 86.328125% */
+/* 20 ÷ 14 = 1.428571 --> 1.428571em */
+#container {
+  width: 86.328125%;
+  max-width: 1105px;
+  margin: 0 auto;
+  padding: 1.428571em;
+  background: #f4ead2 url("images/paper-texture.jpg") repeat;
+}
+
+/* Heading Font Sizes */
+/* h1: 32 ÷ 14 = 2.285714em */
+/* h2: 24 ÷ 14 = 1.714286em */
+/* h3: 20 ÷ 14 = 1.428571em */
+h1 {
+  font-size: 2.285714em;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.714286em;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.428571em;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* Article Width */
+/* 755 ÷ 1105 = 0.6832579 --> 68.32579% */
+article {
+  width: 68.32579%;
+  float: left;
+}
+
+/* Navigation Width and Padding */
+/* 255 ÷ 1105 = 0.230769 --> 23.0769% */
+/* 20 ÷ 14 = 1.428571em */
+nav {
+  width: 23.0769%;
+  float: right;
+  padding: 1.428571em;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 0.75em;
+}
+
+nav a {
+  display: block;
+  color: #5a2d0c;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Drop Cap Styling */
+/* 45 ÷ 14 = 3.214286 --> 321.4286% */
+/* 9 ÷ 14 = 0.642857em */
+p.start:first-letter {
+  font-size: 321.4286%;
+  float: left;
+  line-height: 0.85;
+  margin-right: 0.642857em;
+}
+
+/* Image Responsiveness */
+#silhouette {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Clear floated layout */
+footer {
+  clear: both;
+  padding-top: 1em;
+}
+
+/* Basic Media Query */
+@media screen and (max-width: 768px) {
+  article {
+    width: 100%;
+    float: none;
+  }
+
+  nav {
+    width: 100%;
+    float: none;
+    padding: 1em;
+  }
+}
