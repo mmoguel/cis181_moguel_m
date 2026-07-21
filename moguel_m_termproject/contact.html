@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Share feedback about the AI Study Toolkit and how community college students use artificial intelligence for studying, writing, research, and productivity."
+  >
+
+  <title>AI Study Toolkit | Contact and Feedback</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="site-wrapper">
+      <a class="site-title" href="index.html">AI Study Toolkit</a>
+
+      <p class="site-tagline">
+        Practical and responsible AI support for community college students
+      </p>
+
+      <nav class="main-navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="writing-tools.html">Writing Tools</a></li>
+          <li><a href="research-tools.html">Research Tools</a></li>
+          <li><a href="productivity-tools.html">Productivity Tools</a></li>
+          <li><a href="responsible-ai.html">Responsible AI</a></li>
+          <li><a class="current-page" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-heading">
+      <div class="site-wrapper page-heading-layout">
+
+        <div class="page-heading-content">
+          <p class="eyebrow">Contact and feedback</p>
+
+          <h1>Share your experience with the AI Study Toolkit</h1>
+
+          <p>
+            Use this form to share how you currently use AI for school, which
+            toolkit topic was most helpful, and what additional support would
+            benefit community college students.
+          </p>
+        </div>
+
+        <div class="page-heading-image">
+          <img
+            src="images/student-feedback.png"
+            alt="Community college student completing a feedback form on a laptop"
+          >
+        </div>
+
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="site-wrapper">
+
+        <div class="section-heading">
+          <p class="eyebrow">Student feedback form</p>
+          <h2>Tell us what you think</h2>
+
+          <p>
+            Complete the fields below and select the option that best describes
+            your experience.
+          </p>
+        </div>
+
+        <form
+          class="feedback-form"
+          id="feedbackForm"
+          action="#"
+          method="post"
+          onsubmit="return confirmFeedbackSubmission();"
+        >
+
+          <fieldset>
+            <legend>About you</legend>
+
+            <div class="form-group">
+              <label for="studentName">Name</label>
+              <input
+                type="text"
+                id="studentName"
+                name="studentName"
+                autofocus
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="studentEmail">Email address</label>
+              <input
+                type="email"
+                id="studentEmail"
+                name="studentEmail"
+                placeholder="student@example.com"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="programArea">Program or area of study</label>
+              <input
+                type="text"
+                id="programArea"
+                name="programArea"
+                placeholder="Example: Business, Nursing, or Computer Science"
+              >
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your AI use</legend>
+
+            <div class="form-group">
+              <label for="aiFrequency">How often do you use AI for school?</label>
+
+              <select id="aiFrequency" name="aiFrequency" required>
+                <option value="">Select one</option>
+                <option value="never">Never</option>
+                <option value="rarely">Rarely</option>
+                <option value="sometimes">Sometimes</option>
+                <option value="often">Often</option>
+                <option value="daily">Daily</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="helpfulTopic">Which toolkit topic was most helpful?</label>
+
+              <select id="helpfulTopic" name="helpfulTopic" required>
+                <option value="">Select one</option>
+                <option value="writing">Writing Tools</option>
+                <option value="research">Research Tools</option>
+                <option value="productivity">Productivity Tools</option>
+                <option value="responsible-ai">Responsible AI</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="aiUseDescription">
+                Describe one way you use or may use AI for learning
+              </label>
+
+              <textarea
+                id="aiUseDescription"
+                name="aiUseDescription"
+                required
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Additional feedback</legend>
+
+            <div class="form-group">
+              <label for="additionalFeedback">
+                What other information would you like this toolkit to include?
+              </label>
+
+              <textarea
+                id="additionalFeedback"
+                name="additionalFeedback"
+              ></textarea>
+            </div>
+
+            <div class="checkbox-group">
+              <input
+                type="checkbox"
+                id="followPolicies"
+                name="followPolicies"
+                required
+              >
+
+              <label for="followPolicies">
+                I understand that students should follow instructor and college
+                policies when using AI for assignments.
+              </label>
+            </div>
+          </fieldset>
+
+          <button class="form-button" type="submit">
+            Submit Feedback
+          </button>
+
+        </form>
+
+      </div>
+    </section>
+
+    <section class="callout-section">
+      <div class="site-wrapper callout-layout">
+
+        <div>
+          <h2>Return to the beginning</h2>
+
+          <p>
+            Review the Home page for a complete overview of the AI Study Toolkit.
+          </p>
+        </div>
+
+        <a class="secondary-button" href="index.html">
+          Return Home
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-wrapper">
+
+      <p>
+        AI Study Toolkit is an educational website created for community
+        college students.
+      </p>
+
+      <p>
+        &copy; 2026 Monique Moguel
+      </p>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

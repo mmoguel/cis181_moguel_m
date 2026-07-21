@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Learn how community college students can use AI productivity tools to organize assignments, create study plans, manage time, and reduce missed deadlines."
+  >
+
+  <title>AI Study Toolkit | Productivity Tools</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="site-wrapper">
+      <a class="site-title" href="index.html">AI Study Toolkit</a>
+
+      <p class="site-tagline">
+        Practical and responsible AI support for community college students
+      </p>
+
+      <nav class="main-navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="writing-tools.html">Writing Tools</a></li>
+          <li><a href="research-tools.html">Research Tools</a></li>
+          <li><a class="current-page" href="productivity-tools.html">Productivity Tools</a></li>
+          <li><a href="responsible-ai.html">Responsible AI</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-heading">
+      <div class="site-wrapper page-heading-layout">
+
+        <div class="page-heading-content">
+          <p class="eyebrow">Study organization</p>
+
+          <h1>Use AI to organize your workload and study time</h1>
+
+          <p>
+            AI productivity tools can help you break large assignments into
+            smaller tasks, create study schedules, prioritize deadlines, and
+            develop realistic plans. The final schedule should always reflect
+            your actual responsibilities and available time.
+          </p>
+        </div>
+
+        <div class="page-heading-image">
+          <img
+            src="images/productivity-tools.png"
+            alt="Community college student organizing assignments and study time with a laptop and planner"
+          >
+        </div>
+
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="site-wrapper">
+
+        <div class="section-heading">
+          <p class="eyebrow">Planning support</p>
+          <h2>Ways AI can improve study organization</h2>
+
+          <p>
+            AI is most useful when you provide clear deadlines, available study
+            time, and the specific tasks you need to complete.
+          </p>
+        </div>
+
+        <div class="content-grid">
+
+          <article class="information-card">
+            <h3>Break down assignments</h3>
+
+            <p>
+              Turn a large project into smaller steps that are easier to start,
+              track, and complete.
+            </p>
+
+            <div class="prompt-example">
+              <strong>Example prompt:</strong>
+              Break a five-page research paper due in two weeks into manageable daily tasks.
+            </div>
+          </article>
+
+          <article class="information-card">
+            <h3>Create a study schedule</h3>
+
+            <p>
+              Ask AI to organize your available hours around classes, work,
+              family responsibilities, and deadlines.
+            </p>
+
+            <div class="prompt-example">
+              <strong>Example prompt:</strong>
+              Create a study plan using one hour on weekdays and three hours on Saturday.
+            </div>
+          </article>
+
+          <article class="information-card">
+            <h3>Prioritize deadlines</h3>
+
+            <p>
+              AI can help rank tasks by urgency, difficulty, and the amount of
+              time needed.
+            </p>
+
+            <div class="prompt-example">
+              <strong>Example prompt:</strong>
+              Help me prioritize these assignments based on due date and estimated work time.
+            </div>
+          </article>
+
+          <article class="information-card">
+            <h3>Create review materials</h3>
+
+            <p>
+              Use your own class notes to generate practice questions,
+              flashcards, or a review checklist.
+            </p>
+
+            <div class="prompt-example">
+              <strong>Example prompt:</strong>
+              Create ten practice questions using only the notes I provide.
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section alternate-section">
+      <div class="site-wrapper two-column-layout">
+
+        <div>
+          <p class="eyebrow">Realistic planning</p>
+          <h2>Build a schedule you can actually follow</h2>
+
+          <ol class="step-list">
+            <li>List every assignment and exam with its deadline.</li>
+            <li>Estimate how long each task may take.</li>
+            <li>Identify the days and times you are realistically available.</li>
+            <li>Schedule difficult work during your strongest focus periods.</li>
+            <li>Leave extra time for unexpected delays.</li>
+            <li>Review your schedule at the end of each day.</li>
+            <li>Adjust the plan when your responsibilities change.</li>
+          </ol>
+        </div>
+
+        <aside class="tip-box">
+          <h3>Use specific information</h3>
+
+          <p>
+            A prompt such as “make me a study schedule” is too broad.
+          </p>
+
+          <p>
+            Include your deadlines, work schedule, class times, available study
+            hours, and the tasks you find most difficult.
+          </p>
+        </aside>
+
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="site-wrapper">
+
+        <div class="section-heading">
+          <p class="eyebrow">Interactive planning tool</p>
+          <h2>Weekly study-time calculator</h2>
+
+          <p>
+            Enter the number of courses you are taking and the number of study
+            hours you plan to spend on each course every week.
+          </p>
+        </div>
+
+        <div class="calculator-box">
+
+          <label for="courseCount">Number of courses</label>
+          <input
+            type="number"
+            id="courseCount"
+            min="1"
+            max="10"
+            placeholder="Example: 4"
+          >
+
+          <label for="hoursPerCourse">Study hours per course each week</label>
+          <input
+            type="number"
+            id="hoursPerCourse"
+            min="1"
+            max="30"
+            placeholder="Example: 3"
+          >
+
+          <button
+            class="form-button"
+            type="button"
+            onclick="calculateStudyTime()"
+          >
+            Calculate Weekly Study Time
+          </button>
+
+          <div
+            id="studyResult"
+            class="calculator-result"
+            aria-live="polite"
+          >
+            Your weekly study-time estimate will appear here.
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section alternate-section">
+      <div class="site-wrapper">
+
+        <div class="section-heading">
+          <p class="eyebrow">Before accepting a plan</p>
+          <h2>Productivity checklist</h2>
+        </div>
+
+        <ul class="checklist">
+          <li>The schedule includes all current assignments and deadlines.</li>
+          <li>The plan accounts for classes, work, commuting, and family responsibilities.</li>
+          <li>The study blocks are realistic for my attention and energy levels.</li>
+          <li>The plan includes breaks and extra time for unexpected problems.</li>
+          <li>I reviewed the schedule instead of accepting the AI response automatically.</li>
+          <li>I updated the schedule when my responsibilities changed.</li>
+        </ul>
+
+        <div class="warning-box">
+          <h3>Do not share sensitive personal information</h3>
+
+          <p>
+            Avoid entering private information such as account passwords,
+            student identification numbers, financial records, medical details,
+            or confidential information about another person into an AI tool.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="callout-section">
+      <div class="site-wrapper callout-layout">
+
+        <div>
+          <h2>Use productivity tools responsibly</h2>
+
+          <p>
+            Continue to the Responsible AI page to learn about privacy,
+            academic integrity, bias, and verifying AI-generated information.
+          </p>
+        </div>
+
+        <a class="secondary-button" href="responsible-ai.html">
+          Go to Responsible AI
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-wrapper">
+
+      <p>
+        AI Study Toolkit is an educational website created for community
+        college students.
+      </p>
+
+      <p>
+        &copy; 2026 Monique Moguel
+      </p>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
